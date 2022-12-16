@@ -14,3 +14,6 @@
 
 5. final
     final 문구로 상수를 만들 수 있음. 원하면 type 명시도 가능한데 안써도 자동인식하긴함.
+
+6. late
+    late 문구를 var나 type지정이나 final 앞에 붙여서 나중에 초기화할 수 있음.

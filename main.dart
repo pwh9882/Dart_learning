@@ -10,7 +10,16 @@ void main(List<String> args) {
 
   // dynamic_variables();
   // nullable_variables();
-  final_variables();
+  // final_variables();
+  late_variables();
+}
+
+void late_variables() {
+  print("about late variables");
+  late final i_am_late;
+  late var i_am_late_too;
+  i_am_late = "Here we go!";
+  print(i_am_late);
 }
 
 void final_variables() {
