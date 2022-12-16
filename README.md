@@ -11,3 +11,6 @@
 
 4. null safety
     null safety가 탑재되어 있어서 ?로 표시가능. kotlin하고 비슷한듯
+
+5. final
+    final 문구로 상수를 만들 수 있음. 원하면 type 명시도 가능한데 안써도 자동인식하긴함.

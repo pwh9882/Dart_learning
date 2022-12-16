@@ -9,7 +9,17 @@ void main(List<String> args) {
   print("print testing_variable: " + testing_variable);
 
   // dynamic_variables();
-  nullable_variables();
+  // nullable_variables();
+  final_variables();
+}
+
+void final_variables() {
+  print("about final variables");
+  final cannot_change1 = "ham";
+  // final 붙이면 변경 불가 변수임
+  // 굳이 하자면 변수를 붙여줄 수도 있긴 함 ⬇️
+  final String cannot_change2 = "meat";
+  print(cannot_change1);
 }
 
 void nullable_variables() {
