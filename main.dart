@@ -8,11 +8,22 @@ void main(List<String> args) {
   print("Hello World!");
   print("print testing_variable: " + testing_variable);
 
-  print("about dynamic variables");
-  dynamic_variables();
+  // dynamic_variables();
+  nullable_variables();
+}
+
+void nullable_variables() {
+  print("about nullable variables");
+  String? ham = "spam"; // nullable❗️
+  ham = null;
+  if (ham != null) {
+    print(ham.isEmpty);
+  }
+  ham?.isEmpty;
 }
 
 void dynamic_variables() {
+  print("about dynamic variables");
   var test1;
   dynamic test2;
   test1 = "asdf";
