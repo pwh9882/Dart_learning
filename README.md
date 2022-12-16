@@ -13,7 +13,10 @@
     null safety가 탑재되어 있어서 ?로 표시가능. kotlin하고 비슷한듯
 
 5. final
-    final 문구로 상수를 만들 수 있음. 원하면 type 명시도 가능한데 안써도 자동인식하긴함.
+    final 문구로 ~~상수~~변수를 수정 불가하게 만들 수 있음. 원하면 type 명시도 가능한데 안써도 자동인식하긴함.
 
 6. late
     late 문구를 var나 type지정이나 final 앞에 붙여서 나중에 초기화할 수 있음.
+
+7. const
+    진짜 상수가 등장했다! complie-time constant 즉 컴파일 전에 미리 확정된 값을 넣을 때 사용한다. final과 구분하자.

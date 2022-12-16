@@ -11,7 +11,15 @@ void main(List<String> args) {
   // dynamic_variables();
   // nullable_variables();
   // final_variables();
-  late_variables();
+  // late_variables();
+  const_variables();
+}
+
+void const_variables() {
+  // compile-time constant
+  print("about const variables");
+  const String API = "123";
+  print(API);
 }
 
 void late_variables() {
