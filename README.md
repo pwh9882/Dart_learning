@@ -58,3 +58,7 @@
 1. defining functions
 
     function 정의하는 방법 배움. fatArrow 방식으로 한줄짜리는 그냥 리턴가능.
+
+2. named parameters
+
+    함수에 입력값을 넣을 때 named parameter 형식으로 주면 순서에 상관없이 이름으로 지정해서 넣어줄 수 있음. 단지 required나 default value를 넣어줘야함.
