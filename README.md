@@ -1,5 +1,7 @@
 # Dart_learning
 
+
+**#1 VARIABLES**
 1. dart의 main function
 
 2. 변수선언: var & type(ex: String...) 둘 다 가능하나
@@ -17,3 +19,10 @@
 
 6. late
     late 문구를 var나 type지정이나 final 앞에 붙여서 나중에 초기화할 수 있음.
+
+
+**#2 DATA TYPES**
+
+1. basic types에 관해 배움
+    다 class로 만들어져서 다양한 메소드를 사용할 수 있어 좋다.
+
