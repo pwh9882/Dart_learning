@@ -2,7 +2,15 @@ void main(List<String> args) {
   final title = "part 2. data type";
 
   // basicDataTypes();
-  aboutList();
+  // aboutList();
+  stringInterpolation();
+}
+
+void stringInterpolation() {
+  var name = "woohyeok";
+  var age = 20;
+  var greeting = "Hello everyone, my name is $name and I'm ${age + 2}";
+  print(greeting);
 }
 
 void aboutList() {
