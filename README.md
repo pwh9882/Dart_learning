@@ -54,3 +54,7 @@
     set도 있음. 다른 언어하고 별 차이 없음.
 
 **#3 FUNCTIONS**
+
+1. defining functions
+
+    function 정의하는 방법 배움. fatArrow 방식으로 한줄짜리는 그냥 리턴가능.
