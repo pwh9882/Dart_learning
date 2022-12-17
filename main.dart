@@ -4,7 +4,21 @@ void main(List<String> args) {
   // basicDataTypes();
   // aboutList();
   // stringInterpolation();
-  collectionFor();
+  // collectionFor();
+  aboutMaps();
+}
+
+void aboutMaps() {
+  var player = {
+    "name": "woohyeok",
+    "age": 22,
+    "isSmart": false,
+  };
+  Map<String, Object> player_two = {
+    "name": "chicken",
+    "age": 12,
+    "isSmart": true,
+  }
 }
 
 void collectionFor() {
