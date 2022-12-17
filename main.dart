@@ -1,7 +1,30 @@
 void main(List<String> args) {
   final title = "part 2. data type";
 
-  basicDataTypes();
+  // basicDataTypes();
+  aboutList();
+}
+
+void aboutList() {
+  var numbers = [1, 2, 3];
+  List<int> numbers2;
+  numbers.add(1);
+  numbers.first;
+  var multi_line_formatting_list = [
+    1,
+    2,
+    3, // ⬅️ 이놈 넣으면 자동으로 줄바꿈
+  ];
+
+  // collection if
+  var give_me_five = true;
+  var numbers3 = [
+    1,
+    2,
+    3,
+    if (give_me_five) 5,
+  ];
+  print(numbers3);
 }
 
 void basicDataTypes() {
