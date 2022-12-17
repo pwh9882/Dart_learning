@@ -30,5 +30,7 @@
     list도 클래스라서 여러 기능 사용가능, 마지막에 , 표시하면 줄바꿈, collection if 기능으로 유용하게 사용가능.
 
 3. string interpolation
-    문자열에 변수 집어넣기. 간단히는 $변수 복잡하게는 ${변수 + somting}"
+    문자열에 변수 집어넣기. 간단히는 \$변수 복잡하게는 \${변수 + somting}"
 
+4. collection for
+    리스트에 collection for를 넣어서 편리하게 가능.

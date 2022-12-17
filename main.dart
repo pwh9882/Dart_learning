@@ -3,7 +3,22 @@ void main(List<String> args) {
 
   // basicDataTypes();
   // aboutList();
-  stringInterpolation();
+  // stringInterpolation();
+  collectionFor();
+}
+
+void collectionFor() {
+  var oldFriends = [
+    "coco",
+    "choco",
+  ];
+  var newFriends = [
+    "susi",
+    "sake",
+    "ramen",
+    for (var friend in oldFriends) "❤️$friend❤️",
+  ];
+  print(newFriends);
 }
 
 void stringInterpolation() {
