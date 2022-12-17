@@ -5,7 +5,16 @@ void main(List<String> args) {
   // aboutList();
   // stringInterpolation();
   // collectionFor();
-  aboutMaps();
+  // aboutMaps();
+  aboutSet();
+}
+
+void aboutSet() {
+  var numbers = {1, 2, 3, 4};
+  Set<int> numbers_two = {1, 2, 3}; // 명시가능
+  numbers.add(1);
+  numbers.add(1);
+  print(numbers); // set이기 때문에 변화 없음.
 }
 
 void aboutMaps() {
@@ -18,7 +27,7 @@ void aboutMaps() {
     "name": "chicken",
     "age": 12,
     "isSmart": true,
-  }
+  };
 }
 
 void collectionFor() {
