@@ -62,3 +62,7 @@
 2. named parameters
 
     함수에 입력값을 넣을 때 named parameter 형식으로 주면 순서에 상관없이 이름으로 지정해서 넣어줄 수 있음. 단지 required나 default value를 넣어줘야함.
+
+3. optional parameters
+
+    순차적 인자 방식에서 default value를 사용하고 싶으면 대괄호로 묶어주면 된다.
