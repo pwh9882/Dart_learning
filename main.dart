@@ -8,12 +8,20 @@ void main(List<String> args) {
   // ));
   // print(sayHelloWithOptionalParameters("woohyeok", 22));
   // print(capitalizeNameWithQQ("woohyeok"));
+  print(reverseList([1, 2, 3]));
+}
+
+typedef ListOfInt = List<int>;
+
+ListOfInt reverseList(ListOfInt list) {
+  var reversed = list.reversed;
+  return reversed.toList();
 }
 
 void aboutQQAssignmentOperator() {
   String? name;
   name ??= "woohyeok";
-  name ??= "kimchi";
+  // name ??= "kimchi";
   print(name);
 }
 

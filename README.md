@@ -71,3 +71,5 @@
 
     a ?? b에서 a가 null이면 b
     a ??= b -> a가 null이면 b를 넣음.
+
+5. typedef로 간단한 자료형은 원하는 이름 지을 수 있음. map같이 복잡한건 class 사용하자.
