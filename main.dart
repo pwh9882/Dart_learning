@@ -6,7 +6,28 @@ void main(List<String> args) {
   //   age: 22,
   //   country: "Korea",
   // ));
-  print(sayHelloWithOptionalParameters("woohyeok", 22));
+  // print(sayHelloWithOptionalParameters("woohyeok", 22));
+  // print(capitalizeNameWithQQ("woohyeok"));
+}
+
+void aboutQQAssignmentOperator() {
+  String? name;
+  name ??= "woohyeok";
+  name ??= "kimchi";
+  print(name);
+}
+
+// left ?? right ← 왼쪽이 null이면 right으로
+String capitalizeNameWithQQ(String? name) => name?.toUpperCase() ?? "anon";
+
+String capitalizeNameWithTernaryOperator(String? name) =>
+    (name != null) ? name.toUpperCase() : "anon";
+
+String capitalizeNamebyNoob(String? name) {
+  if (name == null) {
+    return "anon";
+  }
+  return name.toUpperCase();
 }
 
 String sayHelloWithOptionalParameters(String? name, int age,

@@ -66,3 +66,8 @@
 3. optional parameters
 
     순차적 인자 방식에서 default value를 사용하고 싶으면 대괄호로 묶어주면 된다.
+
+4. QQ Operator와 QQ Assignment Operator
+
+    a ?? b에서 a가 null이면 b
+    a ??= b -> a가 null이면 b를 넣음.
