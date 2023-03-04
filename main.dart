@@ -35,9 +35,15 @@ class Player {
   })  : team = "blue",
         xp = 0;
 
+  Player.fromJson(Map<String, dynamic> playerJson)
+      : name = playerJson["name"],
+        age = playerJson["age"],
+        team = playerJson['team'],
+        xp = playerJson['xp'];
+
   void sayHello() {
     print("Hello my name is $name, ${this.name}");
-    print("no need to use this.name just use name!");
+    // print("no need to use this.name just use name!");
     // this.name 형태는 같은 이름의 변수가 있어서 사용하는 게 아닌 이상 name만 쓰는게 권고사항
   }
 }
@@ -55,4 +61,29 @@ void main(List<String> args) {
   var redPlayer = Player.createRedTeamPlayer("woohyeok", 21);
   print('${redPlayer.name}, ${redPlayer.team}');
   var bluePlayer = Player.createBlueTeamPlayer(name: "name", age: 12);
+
+  var apiData = [
+    {
+      'name': "woohyeok",
+      'age': 21,
+      'team': 'red',
+      'xp': 100,
+    },
+    {
+      'name': "wooJun",
+      'age': 23,
+      'team': 'blue',
+      'xp': 100,
+    },
+    {
+      'name': "wooyou",
+      'age': 21,
+      'team': 'red',
+      'xp': 100,
+    },
+  ];
+  apiData.forEach((playerJson) {
+    var player_from_json = Player.fromJson(playerJson);
+    player_from_json.sayHello();
+  });
 }
