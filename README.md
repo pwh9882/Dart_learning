@@ -100,3 +100,5 @@
     Something.newConstructor(String some) : this.some = some, this.that = "asdf";
     처럼 작성해서 사용함. 이놈에도 3.NCP 사용가능.
     Something.newConstructor(this.some) : that = "asdf"; 이렇게 쓰면 더 짧음! that이 중복 없으니까 this 안넣어도 됨.
+
+5. Named Constructor 활용: JSON data를 class로 변환하기
