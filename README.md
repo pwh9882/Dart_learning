@@ -90,3 +90,6 @@
     만약 기본값을 안정하고 생성자로 넣고 싶다면 변수정의할때 late로 설정하면 됨.
     -> dart의 좋은 기능: 생성자 바로 넣기!
     Something(this.alpha, this.beta); 처럼 쓰면 late을 쓰네 어쩌네 할 필요없이 바로됨!
+
+3. Named Constructor Parameters
+    앞서 배웠던 named parameters를 사용해서 생성자를 만들 수 있음. 물론 required나 default value 설정을 해줘야함.

@@ -14,8 +14,16 @@ class Player {
   // 생성자를 넣는 더 좋은 방법:
   String name;
   int xp;
+  String team;
+  int age;
 
-  Player(this.name, this.xp);
+  Player({
+    // required 없으면 nullabe하다고 경고나옴.
+    required this.name,
+    required this.xp,
+    required this.team,
+    required this.age,
+  });
 
   void sayHello() {
     print("Hello my name is $name, ${this.name}");
@@ -25,7 +33,12 @@ class Player {
 }
 
 void main(List<String> args) {
-  var player = Player("woohyeok", 100);
+  var player = Player(
+    name: "woohyeok",
+    xp: 100,
+    team: "red",
+    age: 21,
+  );
   // var player_no_need_to_use_NEW = new Player();
   print(player.name);
   player.name = "changed Name";
