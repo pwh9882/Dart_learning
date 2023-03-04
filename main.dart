@@ -84,6 +84,21 @@ void main(List<String> args) {
   ];
   apiData.forEach((playerJson) {
     var player_from_json = Player.fromJson(playerJson);
-    player_from_json.sayHello();
+    // player_from_json.sayHello();
   });
+
+  // Cascade Notation
+  player.name = "nope";
+  // ->
+  player
+    ..name = "newName"
+    ..age = 12
+    ..team = "red"
+    ..xp = 1000
+    ..sayHello();
+  var cascade_notation_player =
+      Player(name: "name", xp: 10, team: "eam", age: 12)
+        ..age = 13
+        ..name = "note"
+        ..sayHello();
 }

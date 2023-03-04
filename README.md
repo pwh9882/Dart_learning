@@ -102,3 +102,6 @@
     Something.newConstructor(this.some) : that = "asdf"; 이렇게 쓰면 더 짧음! that이 중복 없으니까 this 안넣어도 됨.
 
 5. Named Constructor 활용: JSON data를 class로 변환하기
+
+6. Cascade Notation 
+    반복적인 class.arg 사용에서 class..arg1..arg2..func1; 형식으로 멋지게 쓸 수 있다.
