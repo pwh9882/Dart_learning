@@ -25,6 +25,16 @@ class Player {
     required this.age,
   });
 
+  Player.createRedTeamPlayer(this.name, this.age)
+      : this.team = "red",
+        xp = 0; // this 뺴도 됨!
+
+  Player.createBlueTeamPlayer({
+    required this.name,
+    required this.age,
+  })  : team = "blue",
+        xp = 0;
+
   void sayHello() {
     print("Hello my name is $name, ${this.name}");
     print("no need to use this.name just use name!");
@@ -40,9 +50,9 @@ void main(List<String> args) {
     age: 21,
   );
   // var player_no_need_to_use_NEW = new Player();
-  print(player.name);
-  player.name = "changed Name";
-  print(player.name);
+  // print(player.name);
 
-  player.sayHello();
+  var redPlayer = Player.createRedTeamPlayer("woohyeok", 21);
+  print('${redPlayer.name}, ${redPlayer.team}');
+  var bluePlayer = Player.createBlueTeamPlayer(name: "name", age: 12);
 }

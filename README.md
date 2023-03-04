@@ -93,3 +93,10 @@
 
 3. Named Constructor Parameters
     앞서 배웠던 named parameters를 사용해서 생성자를 만들 수 있음. 물론 required나 default value 설정을 해줘야함.
+
+
+4. Named Constructor
+    dart만의 새로운 문법. 생성자를 여러 종류 만들고 싶을 때 사용함.
+    Something.newConstructor(String some) : this.some = some, this.that = "asdf";
+    처럼 작성해서 사용함. 이놈에도 3.NCP 사용가능.
+    Something.newConstructor(this.some) : that = "asdf"; 이렇게 쓰면 더 짧음! that이 중복 없으니까 this 안넣어도 됨.
