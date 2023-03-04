@@ -1,3 +1,5 @@
+enum Team { red, blue }
+
 class Player {
   /*
   // NOT var name❗️ you need specifiy the type.
@@ -14,7 +16,7 @@ class Player {
   // 생성자를 넣는 더 좋은 방법:
   String name;
   int xp;
-  String team;
+  Team team;
   int age;
 
   Player({
@@ -26,19 +28,19 @@ class Player {
   });
 
   Player.createRedTeamPlayer(this.name, this.age)
-      : this.team = "red",
+      : this.team = Team.red,
         xp = 0; // this 뺴도 됨!
 
   Player.createBlueTeamPlayer({
     required this.name,
     required this.age,
-  })  : team = "blue",
+  })  : team = Team.blue,
         xp = 0;
 
   Player.fromJson(Map<String, dynamic> playerJson)
       : name = playerJson["name"],
         age = playerJson["age"],
-        team = playerJson['team'],
+        team = playerJson['team'] == 'red' ? Team.red : Team.blue,
         xp = playerJson['xp'];
 
   void sayHello() {
@@ -52,7 +54,7 @@ void main(List<String> args) {
   var player = Player(
     name: "woohyeok",
     xp: 100,
-    team: "red",
+    team: Team.red,
     age: 21,
   );
   // var player_no_need_to_use_NEW = new Player();
@@ -93,11 +95,11 @@ void main(List<String> args) {
   player
     ..name = "newName"
     ..age = 12
-    ..team = "red"
+    ..team = Team.red
     ..xp = 1000
     ..sayHello();
   var cascade_notation_player =
-      Player(name: "name", xp: 10, team: "eam", age: 12)
+      Player(name: "name", xp: 10, team: Team.blue, age: 12)
         ..age = 13
         ..name = "note"
         ..sayHello();

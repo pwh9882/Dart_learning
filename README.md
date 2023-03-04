@@ -105,3 +105,8 @@
 
 6. Cascade Notation 
     반복적인 class.arg 사용에서 class..arg1..arg2..func1; 형식으로 멋지게 쓸 수 있다.
+
+7. enum!
+    특정 형태의 데이터를 표현할 때(요일 등) enum enum_name { mon, tue, wed, thu, fri, sat, sun}
+    enum_name.mon 으로 사용
+    string 등으로 "ㅁㄴㅇㄹ" 표현할 필요 없음. 그냥 변수명처럼 적으면 됨.
