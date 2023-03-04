@@ -110,3 +110,6 @@
     특정 형태의 데이터를 표현할 때(요일 등) enum enum_name { mon, tue, wed, thu, fri, sat, sun}
     enum_name.mon 으로 사용
     string 등으로 "ㅁㄴㅇㄹ" 표현할 필요 없음. 그냥 변수명처럼 적으면 됨.
+
+8. abstract class
+    java랑 비슷하게 추상클래스 만들어서 extends 해서 메소드 구현.

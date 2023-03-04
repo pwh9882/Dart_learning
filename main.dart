@@ -1,6 +1,10 @@
+abstract class Human {
+  void walk();
+}
+
 enum Team { red, blue }
 
-class Player {
+class Player extends Human {
   /*
   // NOT var name❗️ you need specifiy the type.
   late String name;
@@ -47,6 +51,10 @@ class Player {
     print("Hello my name is $name, ${this.name}");
     // print("no need to use this.name just use name!");
     // this.name 형태는 같은 이름의 변수가 있어서 사용하는 게 아닌 이상 name만 쓰는게 권고사항
+  }
+
+  void walk() {
+    print("I'm walking!");
   }
 }
 
