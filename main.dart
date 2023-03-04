@@ -1,8 +1,21 @@
 class Player {
+  /*
   // NOT var name❗️ you need specifiy the type.
-  String name = "woohyeok";
-  final String unchangable_name = "Park";
-  int xp = 1500;
+  late String name;
+  late final String unchangable_name;
+  late int xp;
+
+  Player(String name, int xp) {
+    this.name = name;
+    this.unchangable_name = name;
+    this.xp = 1500;
+  }
+  */
+  // 생성자를 넣는 더 좋은 방법:
+  String name;
+  int xp;
+
+  Player(this.name, this.xp);
 
   void sayHello() {
     print("Hello my name is $name, ${this.name}");
@@ -12,8 +25,8 @@ class Player {
 }
 
 void main(List<String> args) {
-  var player = Player();
-  var player_no_need_to_use_NEW = new Player();
+  var player = Player("woohyeok", 100);
+  // var player_no_need_to_use_NEW = new Player();
   print(player.name);
   player.name = "changed Name";
   print(player.name);
