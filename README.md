@@ -113,3 +113,8 @@
 
 8. abstract class
     java랑 비슷하게 추상클래스 만들어서 extends 해서 메소드 구현.
+
+9. Inheritance
+    자식이 extends로 부모를 상속해서 super로 사용가능.
+    부모생성자 초기화 할때 자식의 생성자로 받아서 super()불러서 넣어줄 수 있음.
+    더 짧게 하려면 그냥 SomeClass(this.something, super.something_for_super); 로 바로 넣어줄 수 있음.
