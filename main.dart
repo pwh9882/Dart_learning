@@ -1,3 +1,17 @@
+class Strong {
+  final double strength_level = 1500.92;
+}
+
+class QuickRunner {
+  void runQuick() {
+    print("ruuuuuuuuuuun!");
+  }
+}
+
+class Tall {
+  final double height = 1.99;
+}
+
 enum Team { red, blue }
 
 class Human {
@@ -9,7 +23,7 @@ class Human {
   }
 }
 
-class Player extends Human {
+class Player extends Human with Strong, QuickRunner, Tall {
   final Team team;
   Player(this.team, super.name);
   Player.longExample({
@@ -26,4 +40,5 @@ class Player extends Human {
 void main(List<String> args) {
   var player = Player(Team.red, "woohyeok");
   player.sayHello();
+  player.runQuick();
 }

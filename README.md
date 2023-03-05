@@ -118,3 +118,7 @@
     자식이 extends로 부모를 상속해서 super로 사용가능.
     부모생성자 초기화 할때 자식의 생성자로 받아서 super()불러서 넣어줄 수 있음.
     더 짧게 하려면 그냥 SomeClass(this.something, super.something_for_super); 로 바로 넣어줄 수 있음.
+
+10. Mixin
+    생성자가 없는 class를 만들어서 다른 클래스에 with로 넣어주면 Mixin이다.
+    부모-자식 관계가 되는 것이 아닌 그냥 mixin class의 내용을 다 가져온다고 생각하면 됨.
